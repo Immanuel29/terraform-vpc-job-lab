@@ -54,6 +54,11 @@ terraform destroy
 
 ## Screenshots
 <!-- Add screenshots here after drag and drop into GitHub editor -->
+<img width="1894" height="733" alt="Screenshot 2026-05-05 182755" src="https://github.com/user-attachments/assets/91ea8355-77ad-46fd-bf9a-922f3bc28fda" />
+<img width="1919" height="704" alt="Screenshot 2026-05-05 182820" src="https://github.com/user-attachments/assets/f3a12e5e-722d-4242-be9b-b8d8189e6286" />
+<img width="1918" height="728" alt="Screenshot 2026-05-05 182841" src="https://github.com/user-attachments/assets/f40c076d-0b23-4a02-a52f-1e3fc4a83804" />
+<img width="1898" height="728" alt="Screenshot 2026-05-05 182909" src="https://github.com/user-attachments/assets/2c132e2d-b6b8-4984-b721-f009a4b96c69" />
+
 
 ## Author
 Immanuel Thornton
