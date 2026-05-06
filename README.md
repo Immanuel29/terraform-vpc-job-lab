@@ -1,3 +1,4 @@
+
 # Terraform VPC Lab
 
 ## Overview
@@ -58,7 +59,12 @@ terraform destroy
 <img width="1919" height="704" alt="Screenshot 2026-05-05 182820" src="https://github.com/user-attachments/assets/f3a12e5e-722d-4242-be9b-b8d8189e6286" />
 <img width="1918" height="728" alt="Screenshot 2026-05-05 182841" src="https://github.com/user-attachments/assets/f40c076d-0b23-4a02-a52f-1e3fc4a83804" />
 <img width="1898" height="728" alt="Screenshot 2026-05-05 182909" src="https://github.com/user-attachments/assets/2c132e2d-b6b8-4984-b721-f009a4b96c69" />
-
+<img width="1470" height="705" alt="Screenshot 2026-05-06 143645" src="https://github.com/user-attachments/assets/d2b5ab19-dff8-45a0-a47d-9906bdf59314" />
+<img width="780" height="493" alt="Screenshot 2026-05-06 134513" src="https://github.com/user-attachments/assets/695c3883-55fa-409b-9788-f1d5a5aac075" />
+<img width="1488" height="751" alt="Screenshot 2026-05-06 134446" src="https://github.com/user-attachments/assets/d319870a-acb5-4f8f-bcbc-71fa101e3f6a" />
+<img width="1507" height="766" alt="Screenshot 2026-05-06 134351" src="https://github.com/user-attachments/assets/f64a5891-8cf1-42ac-acde-82fc2f361197" />
+<img width="1507" height="716" alt="Screenshot 2026-05-06 134323" src="https://github.com/user-attachments/assets/2234dbff-6ee6-4c56-a075-4d66a28e5ddb" />
+<img width="1501" height="700" alt="Screenshot 2026-05-06 134300" src="https://github.com/user-attachments/assets/48c18965-dec8-4466-9818-d37fd6c1cc65" />
 
 ## Author
 Immanuel Thornton
