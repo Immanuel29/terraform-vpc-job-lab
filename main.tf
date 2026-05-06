@@ -19,43 +19,23 @@ provider "aws" {
   region = var.aws_region
 }
 
-resource "aws_vpc" "main" {
-  cidr_block           = var.vpc_cidr
-  enable_dns_hostnames = true
-  enable_dns_support   = true
+module "vpc" {
+  source = "./modules/vpc"
 
-  tags = {
-    Name        = "${var.project_name}-vpc"
-    Environment = var.environment
-    ManagedBy   = "terraform"
-  }
+  aws_region          = var.aws_region
+  project_name        = var.project_name
+  environment         = var.environment
+  vpc_cidr            = var.vpc_cidr
+  public_subnet_cidr  = var.public_subnet_cidr
+  private_subnet_cidr = var.private_subnet_cidr
 }
 
-resource "aws_subnet" "public" {
-  vpc_id                  = aws_vpc.main.id
-  cidr_block              = var.public_subnet_cidr
-  availability_zone       = "${var.aws_region}a"
-  map_public_ip_on_launch = true
+module "ec2" {
+  source = "./modules/ec2"
 
-  tags = {
-    Name = "${var.project_name}-public-subnet"
-  }
-}
-
-resource "aws_subnet" "private" {
-  vpc_id            = aws_vpc.main.id
-  cidr_block        = var.private_subnet_cidr
-  availability_zone = "${var.aws_region}b"
-
-  tags = {
-    Name = "${var.project_name}-private-subnet"
-  }
-}
-
-resource "aws_internet_gateway" "main" {
-  vpc_id = aws_vpc.main.id
-
-  tags = {
-    Name = "${var.project_name}-igw"
-  }
+  project_name  = var.project_name
+  environment   = var.environment
+  instance_type = var.instance_type
+  vpc_id        = module.vpc.vpc_id
+  subnet_id     = module.vpc.public_subnet_id
 }
